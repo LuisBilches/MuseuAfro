@@ -1,0 +1,77 @@
+.app-container {
+    display: flex;
+    
+    padding: 10px;
+    position: relative;
+  }
+  
+  .menu-icon-container {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-icon-container.menu-open {
+    background-color: black;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: black;
+    color: white;
+    transition: transform 0.3s ease;
+    font-family: 'Arial, sans-serif';
+    z-index: 1000;
+    border: 2px solid #fff; /* Borda do menu */
+    border-radius: 8px; /* Deixa as bordas arredondadas */
+    padding: 10px;
+    transform: translateX(-100%);
+  }
+  
+  .side-menu.open {
+    transform: translateX(0);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #ffd700; /* Destaque ao passar o mouse */
+  }
+  
+  .main-content {
+    margin-left: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    border: 2px solid #333;
+    border-radius: 8px; /* Borda arredondada do conteúdo principal */
+  }
