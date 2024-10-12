@@ -8,7 +8,7 @@ const Home = () => {
       <SideMenu />
       <div>
         <h1>Museu Online da História Afro-descendente de Londrina</h1>
-        <p>Bem-vindo ao nosso museu virtual!</p>
+        <p>Bem-vindo ao nosso museu virtual bitches!!</p>
         <Routes>
           <Route path="/historia-preta" element={<div>História Preta de Londrina</div>} />
           <Route path="/memorias-pretas" element={<div>Memórias Pretas</div>} />
